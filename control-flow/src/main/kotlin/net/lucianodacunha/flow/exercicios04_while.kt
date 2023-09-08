@@ -24,13 +24,10 @@ fun simulaCaixaAgua(){
 fun fizzbuzz(){
     var i = 1
     while(i <= 50){
-        var message: String? = null
+        var message: String = ""
         if (i % 5 == 0) message += "fizz"
         if (i % 3 == 0) message += "buzz"
-        message?.let{
-            it.plus("")
-        }
-//        if (!message.isEmpty()) message = String.format("[%02d - %s]", i, message)
+        if (!message.isEmpty()) message = String.format("[%02d - %s]", i, message)
         if (i % 10 == 1) println()
         i++
         if (message.isNullOrBlank()) continue
@@ -82,7 +79,7 @@ fun calculaInvestimento(){
 
 fun main(){
 //    simulaCaixaAgua()
-//    fizzbuzz()
+    fizzbuzz()
 //    inverteTexto("Kotlin")
 //    contaCaracteres("Kotlin")
 //    println(contaCaracteres("xxooox"))
