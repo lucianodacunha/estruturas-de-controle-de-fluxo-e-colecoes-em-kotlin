@@ -1,8 +1,5 @@
 package net.lucianodacunha.flow
 
-import io.github.serpro69.kfaker.Faker
-
-
 /**
  * # 36 - Prática if/else
  *
