@@ -2,7 +2,7 @@ package net.lucianodacunha.collections.functions
 
 import io.github.serpro69.kfaker.Faker
 
-data class Person(val name: String, val age: Int)
+data class Person(val name: String, var age: Int)
 
 fun main(){
     val lista = listOf<Int>(1,2,3,4,5)
